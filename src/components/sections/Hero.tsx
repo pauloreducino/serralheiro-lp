@@ -166,7 +166,7 @@ export default function Hero() {
           quality={90}
         />
         {/* Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-r from-iron via-iron/90 to-iron/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-iron/95 via-iron/75 to-iron/30" />
         <div className="absolute inset-0 bg-gradient-to-t from-iron/80 via-transparent to-iron/30" />
         <div className="absolute inset-0 metal-texture" />
       </div>
