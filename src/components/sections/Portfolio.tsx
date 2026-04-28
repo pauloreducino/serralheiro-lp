@@ -264,7 +264,7 @@ export default function Portfolio() {
           </h2>
           <p className="text-steel-400 text-base max-w-lg mx-auto">
             Cada projeto é único. Aqui estão alguns dos trabalhos que mais nos
-            orgulhamos — clique para ver os detalhes.
+            orgulhamos: clique para ver os detalhes.
           </p>
         </div>
 
