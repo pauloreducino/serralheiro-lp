@@ -26,7 +26,7 @@ const portfolioItems = [
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1565043666747-69f6646db940?w=800&q=80",
+    src: "/portfolio/cobertura-metalica-balanco-04.jpg",
     title: "Cobertura Metálica Comercial",
     description:
       "Estrutura metálica para cobertura de estacionamento comercial com 400m². Perfis laminados, telha de policarbonato e calhas integradas.",
@@ -53,7 +53,7 @@ const portfolioItems = [
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
+    src: "/portfolio/escada-caracol.jpg",
     title: "Escada Caracol em Ferro",
     description:
       "Escada caracol em ferro forjado com degraus em madeira maciça de imbuia. Corrimão artesanal em ferro redondo 1 polegada trabalhado à mão.",
@@ -167,13 +167,12 @@ function PortfolioCard({
       style={{ transitionDelay: delay }}
       onClick={onClick}
     >
-      <div className="relative overflow-hidden">
+      <div className="relative w-full h-full overflow-hidden">
         <Image
           src={item.src}
           alt={item.title}
-          width={600}
-          height={400}
-          className="w-full object-cover transition-transform duration-700"
+          fill
+          className="object-cover transition-transform duration-700"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           quality={80}
         />
