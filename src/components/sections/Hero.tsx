@@ -146,7 +146,7 @@ export default function Hero() {
   // Merge refs
   const setRefs = (el: HTMLDivElement | null) => {
     statsRef.current = el;
-    (inViewRef as React.MutableRefObject<HTMLElement | null>).current = el;
+    (inViewRef as React.RefObject<HTMLElement | null>).current = el;
   };
 
   return (
@@ -157,7 +157,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+          src="/hero/serralheiro-hero-img.webp"
           alt="Serralheiro trabalhando com metal"
           fill
           priority
@@ -166,7 +166,8 @@ export default function Hero() {
           quality={90}
         />
         {/* Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-r from-iron/85 via-iron/60 to-iron/20" />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-iron/80 via-iron/40 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-iron/80 via-transparent to-iron/30" />
         <div className="absolute inset-0 metal-texture" />
       </div>
