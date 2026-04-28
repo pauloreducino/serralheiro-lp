@@ -28,12 +28,19 @@ const highlights = [
 ];
 
 export default function About() {
-  const { ref: titleRef, isInView: titleInView } = useInView({ threshold: 0.2 });
+  const { ref: titleRef, isInView: titleInView } = useInView({
+    threshold: 0.2,
+  });
   const { ref: imgRef, isInView: imgInView } = useInView({ threshold: 0.2 });
-  const { ref: cardsRef, isInView: cardsInView } = useInView({ threshold: 0.1 });
+  const { ref: cardsRef, isInView: cardsInView } = useInView({
+    threshold: 0.1,
+  });
 
   return (
-    <section id="sobre" className="py-24 lg:py-32 bg-iron-light relative overflow-hidden">
+    <section
+      id="sobre"
+      className="py-24 lg:py-32 bg-iron-light relative overflow-hidden"
+    >
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-forge/5 blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-forge/3 blur-3xl pointer-events-none" />
@@ -45,13 +52,15 @@ export default function About() {
           <div
             ref={imgRef as React.RefObject<HTMLDivElement>}
             className={`relative transition-all duration-900 ${
-              imgInView ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
+              imgInView
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 -translate-x-12"
             }`}
           >
             {/* Main photo */}
             <div className="relative aspect-[4/5] rounded-sm overflow-hidden shadow-steel-lg">
               <Image
-                src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=85"
+                src="/hero/img-about-section.jpg"
                 alt="Carlos Silva - Serralheiro profissional trabalhando"
                 fill
                 className="object-cover object-center"
@@ -64,7 +73,9 @@ export default function About() {
               {/* Name badge on image */}
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="bg-iron/90 backdrop-blur-sm border border-white/10 rounded-sm px-5 py-4">
-                  <div className="text-white font-bold text-lg">Carlos Silva</div>
+                  <div className="text-white font-bold text-lg">
+                    Carlos Silva
+                  </div>
                   <div className="text-forge text-sm font-medium">
                     Fundador & Mestre Serralheiro
                   </div>
@@ -80,7 +91,10 @@ export default function About() {
             <div className="absolute -right-5 top-1/3 bg-forge rounded-sm p-5 shadow-forge text-center hidden lg:block">
               <div
                 className="font-display text-4xl text-white leading-none"
-                style={{ fontFamily: "var(--font-display), 'Bebas Neue', impact, sans-serif" }}
+                style={{
+                  fontFamily:
+                    "var(--font-display), 'Bebas Neue', impact, sans-serif",
+                }}
               >
                 15+
               </div>
@@ -95,7 +109,9 @@ export default function About() {
             <div
               ref={titleRef as React.RefObject<HTMLDivElement>}
               className={`transition-all duration-700 ${
-                titleInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                titleInView
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
               }`}
             >
               {/* Label */}
@@ -109,11 +125,13 @@ export default function About() {
               {/* Title */}
               <h2
                 className="font-display text-[clamp(2.5rem,5vw,4rem)] text-white leading-[0.95] tracking-wider mb-6"
-                style={{ fontFamily: "var(--font-display), 'Bebas Neue', impact, sans-serif" }}
+                style={{
+                  fontFamily:
+                    "var(--font-display), 'Bebas Neue', impact, sans-serif",
+                }}
               >
                 MAIS DE UMA DÉCADA{" "}
-                <span className="gradient-text">FORJANDO</span>{" "}
-                QUALIDADE
+                <span className="gradient-text">FORJANDO</span> QUALIDADE
               </h2>
 
               {/* Story paragraphs */}
@@ -121,8 +139,8 @@ export default function About() {
                 <p>
                   Comecei na serralheria aos 16 anos, como aprendiz do meu pai.
                   Aprendi que trabalho com metal exige paciência, precisão e
-                  respeito pelo material. Cada solda, cada dobra, cada acabamento
-                  conta a história de quem o fez.
+                  respeito pelo material. Cada solda, cada dobra, cada
+                  acabamento conta a história de quem o fez.
                 </p>
                 <p>
                   Depois de mais de 15 anos trabalhando em grandes obras e
@@ -134,9 +152,9 @@ export default function About() {
                   tempo e superam expectativas.
                 </p>
                 <p>
-                  Hoje, atendo famílias e empresas que valorizam qualidade real —
-                  não a mais barata, mas a melhor relação entre custo, durabilidade
-                  e beleza.
+                  Hoje, atendo famílias e empresas que valorizam qualidade real
+                  — não a mais barata, mas a melhor relação entre custo,
+                  durabilidade e beleza.
                 </p>
               </div>
             </div>
@@ -145,7 +163,9 @@ export default function About() {
             <div
               ref={cardsRef as React.RefObject<HTMLDivElement>}
               className={`grid grid-cols-2 gap-4 mt-10 transition-all duration-700 ${
-                cardsInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                cardsInView
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
               }`}
             >
               {highlights.map((item, i) => (
