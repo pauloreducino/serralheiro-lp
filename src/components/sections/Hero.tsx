@@ -166,7 +166,7 @@ export default function Hero() {
           quality={90}
         />
         {/* Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-r from-iron/98 via-iron/80 to-iron/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-iron via-iron/90 to-iron/50" />
         <div className="absolute inset-0 bg-gradient-to-t from-iron/80 via-transparent to-iron/30" />
         <div className="absolute inset-0 metal-texture" />
       </div>
@@ -227,10 +227,10 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p
-            className={`text-steel-300 text-lg sm:text-xl max-w-lg leading-relaxed font-light transition-all duration-700 ${
+            className={`text-white text-lg sm:text-xl max-w-lg leading-relaxed font-light transition-all duration-700 ${
               loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
-            style={{ transitionDelay: "0.4s" }}
+            style={{ transitionDelay: "0.4s", textShadow: "0 1px 12px rgba(0,0,0,0.9), 0 0 30px rgba(0,0,0,0.7)" }}
           >
             Portões automáticos, grades de segurança e estruturas metálicas
             feitas sob medida para proteger e valorizar sua propriedade em São
