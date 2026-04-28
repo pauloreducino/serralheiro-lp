@@ -8,7 +8,7 @@ import { X, ZoomIn } from "lucide-react";
 const portfolioItems = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    src: "/portfolio/house-entrance-japan-building-with-fence.jpg",
     title: "Portão Deslizante Residencial",
     description:
       "Portão deslizante em ferro com automação completa. Motor Ppa, controle por aplicativo e sensor de presença. Acabamento em tinta eletrostática preto fosco.",
@@ -17,7 +17,7 @@ const portfolioItems = [
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80",
+    src: "/portfolio/grades-de-protecao-contemporaneas.jpg",
     title: "Grades de Proteção Contemporâneas",
     description:
       "Grades em ferro quadrado com design contemporâneo. Barras verticais espaçadas 10cm para máxima segurança sem perder a estética.",
@@ -35,7 +35,7 @@ const portfolioItems = [
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80",
+    src: "/portfolio/guarda-corpo-inox-preco-1.jpg",
     title: "Guarda-corpo Inox com Vidro",
     description:
       "Guarda-corpo em aço inox 316 com vidro temperado de 10mm. Fixação por perfil U embutido no piso, sem aparecer os parafusos.",
@@ -44,7 +44,7 @@ const portfolioItems = [
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=80",
+    src: "/portfolio/portao-de-ferro-industrial.webp",
     title: "Portão Basculante Industrial",
     description:
       "Portão basculante de alta resistência para acesso de veículos pesados. Chapa dobrada 3mm com reforços internos e acionamento pneumático.",
@@ -62,7 +62,7 @@ const portfolioItems = [
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1533050487297-09b450131914?w=800&q=80",
+    src: "/portfolio/estrutura-para-area-gourmet.webp",
     title: "Estrutura para Área Gourmet",
     description:
       "Pérgola metálica com treliça articulada para área gourmet de 60m². Perfis de alumínio com abertura motorizada para controle de ventilação.",
@@ -71,7 +71,7 @@ const portfolioItems = [
   },
   {
     id: 8,
-    src: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=800&q=80",
+    src: "/portfolio/Gradil-ornamental-classico.jpg",
     title: "Gradil Ornamental Clássico",
     description:
       "Gradil ornamental em ferro fundido com ponteiras decorativas e portal central de acesso. Inspirado na arquitetura europeia clássica.",
@@ -256,10 +256,12 @@ export default function Portfolio() {
           </div>
           <h2
             className="font-display text-[clamp(2.5rem,6vw,4.5rem)] text-white leading-[0.95] tracking-wider mb-4"
-            style={{ fontFamily: "var(--font-display), 'Bebas Neue', impact, sans-serif" }}
+            style={{
+              fontFamily:
+                "var(--font-display), 'Bebas Neue', impact, sans-serif",
+            }}
           >
-            PORTFÓLIO{" "}
-            <span className="gradient-text">DE OBRAS</span>
+            PORTFÓLIO <span className="gradient-text">DE OBRAS</span>
           </h2>
           <p className="text-steel-400 text-base max-w-lg mx-auto">
             Cada projeto é único. Aqui estão alguns dos trabalhos que mais nos
